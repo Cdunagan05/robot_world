@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/application.css">
+  <title>My Sinatra Application</title>
+</head>
+<body>
+  <div class="container">
+    <form action='/robots/80' method="post">
+  <input type="hidden" name="_method" value="put" />
+  <input type="text" name="robot[name]" value="Rick" />
+  <input type="text" name="robot[city]" value="Memphis" />
+  <input type="text" name="robot[state]" value="Tennessee" />
+  <input type="text" name="robot[birthdate]" value="7/7/1977" />
+  <textarea name="robot[department]">This one</textarea>
+  <input type="submit" />
+</form>
+
+  </div>
+</body>
+</html>

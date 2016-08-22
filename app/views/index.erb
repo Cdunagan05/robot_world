@@ -1,0 +1,8 @@
+<div class='col-md-12 navbar navbar-inverse navbar-static-top'>
+  <h1 class='navbar-brand'>All Robots</h1>
+</div>
+
+<% @robots.each do |robot| %>
+  <h3><%= robot.id %>: <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+  <a href="/robots/<%= robot.id %>/edit">Edit</a>
+  <% end %>

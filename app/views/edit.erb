@@ -1,0 +1,9 @@
+<form action='/robots/<%= @robot.id %>' method="post">
+  <span class="input-group-addon" id="basic-addon1">@</span><input type="hidden" name="_method" value="put" />
+  <input type="text" name="robot[name]" value="<%= @robot.name %>" />
+  <input type="text" name="robot[city]" value="<%= @robot.city %>" />
+  <input type="text" name="robot[state]" value="<%= @robot.state %>" />
+  <input type="text" name="robot[birthdate]" value="<%= @robot.birthdate %>" />
+  <textarea name="robot[department]"><%= @robot.department %></textarea>
+  <input type="submit" value="submit"/>
+</form>
